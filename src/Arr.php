@@ -22,7 +22,7 @@ class Arr extends Arr\Arr_implements
     /**
      * 去除掉空的内容
      * @param array $Values
-     * @return Arr\Arr_implements
+     * @return $this
      */
     public function setValues(array $Values)
     {
