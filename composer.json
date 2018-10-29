@@ -1,0 +1,20 @@
+{
+  "name": "xltxlm/arr",
+  "authors": [
+    {
+      "name": "copygithub",
+      "email": "xltxlm@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "xltxlm\\arr\\": [
+        "src/",
+        "./"
+      ]
+    }
+  }
+}
