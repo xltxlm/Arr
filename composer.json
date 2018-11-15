@@ -6,8 +6,10 @@
       "email": "xltxlm@qq.com"
     }
   ],
+  "minimum-stability": "dev",
+  "description":"数组的相关处理类",
   "require": {
-    "php": ">=7.1"
+    "php": "~7.1"
   },
   "autoload": {
     "psr-4": {

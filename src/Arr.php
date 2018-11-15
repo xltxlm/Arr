@@ -40,5 +40,10 @@ class Arr extends Arr\Arr_implements
         return current(array_slice($this->getValues(), -1, 1));
     }
 
+    public function Tojson(): string
+    {
+        return json_encode($this->getValues(), JSON_UNESCAPED_UNICODE) ?: '[]';
+    }
+
 
 }
