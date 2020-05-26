@@ -17,6 +17,7 @@ Trait __to_implements
 
 
     /**
+    * 标准的get,set变量;
     * @return array;
     */
             public function getObjects():array        {
@@ -49,6 +50,7 @@ Trait __to_implements
 
 
     /**
+    * 需要归组的字段;
     * @return string;
     */
             public function getGroup_by_Keyname():string        {

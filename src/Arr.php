@@ -21,6 +21,7 @@ class Arr extends Arr\Arr_implements
 
     /**
      * 去除掉空的内容
+     *
      * @param array $Values
      * @return $this
      */
@@ -39,6 +40,12 @@ class Arr extends Arr\Arr_implements
     {
         return current(array_slice($this->getValues(), -1, 1));
     }
+
+    public function getbyIndex(int $index = null)
+    {
+        return current(array_slice($this->getValues(), $index, 1));
+    }
+
 
     public function Tojson(): string
     {
