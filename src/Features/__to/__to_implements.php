@@ -1,5 +1,5 @@
 <?php
-namespace xltxlm\arr\Plus\__to;
+namespace xltxlm\arr\Features\__to;
 
 /**
  * :Trait;

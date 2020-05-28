@@ -1,10 +1,12 @@
 <?php
 namespace xltxlm\arr\Features\Arr_MapByKey_Uniq;
 
-use \xltxlm\arr\Plus\__to;
+use \xltxlm\arr\Features\__to;
 /**
  * :类;
- * 按照指定的索引值进行归组,明确每个组下面只有一个元素;
+ * 按照指定的索引值进行归组,明确每个组下面只有一个元素。
+
+传入的参数可以是二维数组，也可以是对象数组;
 */
 abstract class Arr_MapByKey_Uniq_implements
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace xltxlm\arr\Plus;
+namespace xltxlm\arr\Features;
 
 
 /**
@@ -19,6 +19,5 @@ Trait __to
             $this->setObjects($Objects);
         }
     }
-
 
 }

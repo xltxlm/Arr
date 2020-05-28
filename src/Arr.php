@@ -8,7 +8,6 @@ namespace xltxlm\arr;
 class Arr extends Arr\Arr_implements
 {
 
-
     /**
      * Arr constructor.
      */
@@ -25,9 +24,16 @@ class Arr extends Arr\Arr_implements
      * @param array $Values
      * @return $this
      */
-    public function setValues(array $Values)
+    public function setValues(array $Values = [])
     {
-        $Values = array_diff($Values, ['']);
+        $Values_new = [];
+        foreach ($Values as $k => $value) {
+            if ($value || (is_string($value) && strlen($value) > 0)) {
+                $Values_new[$k] = $value;
+            }
+        }
+        //array_diff 在对比二维数组的时候，挂了。。。Array to string conversion
+        //$Values = array_diff($Values, ['']);
         return parent::setValues($Values);
     }
 
@@ -41,7 +47,7 @@ class Arr extends Arr\Arr_implements
         return current(array_slice($this->getValues(), -1, 1));
     }
 
-    public function getbyIndex(int $index = null)
+    public function getbyIndex(int $index = 0)
     {
         return current(array_slice($this->getValues(), $index, 1));
     }
